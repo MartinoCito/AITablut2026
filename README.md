@@ -30,10 +30,12 @@ Progetto nato per il corso di **Intelligenza Artificiale (UniBo)**: l’obiettiv
 
 ## How to train 
 
-- ```bat
+```bat
 java -jar MyTrainer.jar
+```
 
-## How to Run (Player) 🎮
+## How to Run (Player)
 
 ```bat
 java -jar "TerrutPlayer.jar" WHITE/BLACK timeout <ipAddress>
+```
