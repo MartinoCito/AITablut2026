@@ -7,7 +7,7 @@ public class GAEngine {
 
     private static final double MUTATION_RATE = 0.15; //tasso di mutazione
     private static final int TOURNAMENT_SIZE = 4;     //dimensione torneo selezione
-    private static final double ELITISM_RATE = 0.10;  //% dei migliori che passano diretti
+    private static final double ELITISM_RATE = 0.05;  //% dei migliori che passano diretti
     private static final Random rand = new Random();
 
     public static Population evolvePopulation(Population pop) {
@@ -58,6 +58,7 @@ public class GAEngine {
             if (rand.nextDouble() <= MUTATION_RATE) {
             	// aggiunge un valore preso da una gaussiana con valor medio 0 e deviazione standard 0.3
                 ind.weights[i] += rand.nextGaussian()*0.3; 
+                ind.weights[i] = Math.max(-10.0, Math.min(10.0, ind.weights[i]));
             }
         }
     }

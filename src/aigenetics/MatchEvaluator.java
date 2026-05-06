@@ -1,16 +1,16 @@
 package aigenetics;
 
-import java.util.concurrent.Callable;
 import aisearch.MyAIPlayerLogic;
 import it.unibo.ai.didattica.competition.tablut.domain.State;
+import java.util.concurrent.Callable;
 
 
 public class MatchEvaluator implements Callable<Integer> {
 
-    private HeuristicWeights player;
-    private HeuristicWeights opponent;
-    private State.Turn role;
-    private int depth;
+    private final HeuristicWeights player;
+    private final HeuristicWeights opponent;
+    private final State.Turn role;
+    private final int depth;
 
     public MatchEvaluator(
         HeuristicWeights player,
