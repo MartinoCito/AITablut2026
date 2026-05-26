@@ -1,6 +1,7 @@
 # Terrut — Minimax + Alpha-Beta + Genetic Training
 
 ## Introduction  
+1 posto anno 2025/2026
 Progetto nato per il corso di **Intelligenza Artificiale (UniBo)**: l’obiettivo è creare un agente capace di giocare a **Tablut** usando una combinazione di:
 
 - 🧠 **Minimax** con **Alpha–Beta pruning**
